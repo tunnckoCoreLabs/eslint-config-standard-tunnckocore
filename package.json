@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-standard-tunnckocore",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantic-release",
   "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 6",
   "repository": "tunnckoCore/eslint-config-standard-tunnckocore",
   "homepage": "https://github.com/tunnckoCore/eslint-config-standard-tunnckocore",
@@ -14,7 +14,8 @@
     "precommit": "hela precommit",
     "commit": "hela commit",
     "postcommit": "git push",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "hela release",
+    "renovate": "hela renovate"
   },
   "engines": {
     "node": ">=6",
@@ -32,12 +33,12 @@
     "eslint-plugin-jsdoc": "3.1.2",
     "eslint-plugin-node": "5.1.1",
     "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-react": "7.2.0",
     "eslint-plugin-standard": "3.0.1"
   },
   "devDependencies": {
     "eslint": "4.4.1",
-    "hela": "0.1.12",
+    "hela": "0.2.7",
     "husky": "0.14.3",
     "semantic-release": "^6.3.6"
   },
@@ -65,45 +66,6 @@
     "functions": 100,
     "branches": 100,
     "lines": 100
-  },
-  "renovate": {
-    "enabled": true,
-    "pinVersions": true,
-    "rebaseStalePrs": true,
-    "semanticCommits": true,
-    "unpublishSafe": false,
-    "labels": [
-      "deps",
-      "renovate"
-    ],
-    "prCreation": "not-pending",
-    "depTypes": [
-      {
-        "depType": "dependencies",
-        "semanticPrefix": "fix(renovate/deps): ",
-        "automerge": "minor",
-        "automergeType": "pr",
-        "assignees": [
-          "charlike"
-        ]
-      },
-      {
-        "depType": "devDependencies",
-        "semanticPrefix": "chore(renovate/devDeps): ",
-        "automerge": "any",
-        "automergeType": "branch-push"
-      }
-    ],
-    "packageRules": [
-      {
-        "packageNames": [
-          "semantic-release"
-        ],
-        "automerge": "minor",
-        "automergeType": "pr",
-        "pinVersions": false
-      }
-    ]
   },
   "verb": {
     "run": true,
