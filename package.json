@@ -1,0 +1,131 @@
+{
+  "name": "eslint-config-standard-tunnckocore",
+  "version": "0.0.0-semantic-release",
+  "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 6 and is oriented to it",
+  "repository": "tunnckoCore/eslint-config-standard-tunnckocore",
+  "homepage": "https://github.com/tunnckoCore/eslint-config-standard-tunnckocore",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
+  "main": "./index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "hela lint . -c .eslintrc.js",
+    "test": "hela test node test.js",
+    "precommit": "hela precommit",
+    "commit": "hela commit",
+    "postcommit": "git push",
+    "release": "hela release"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=5"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "eslint-config-standard": "10.2.1",
+    "eslint-config-standard-jsx": "4.0.2",
+    "eslint-config-standard-react": "5.0.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsdoc": "3.1.2",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-plugin-standard": "3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "4.4.1",
+    "hela": "0.1.4",
+    "mukla": "0.4.9"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "preference",
+    "standard",
+    "standard style",
+    "standardjs",
+    "javascript standard style",
+    "charlike",
+    "tunnckocore",
+    "hela",
+    "jsx",
+    "react",
+    "promise",
+    "es2015",
+    "es6",
+    "es2017"
+  ],
+  "nyc": {
+    "check-coverage": true,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "lines": 100
+  },
+  "renovate": {
+    "enabled": true,
+    "pinVersions": true,
+    "rebaseStalePrs": true,
+    "semanticCommits": true,
+    "unpublishSafe": false,
+    "labels": [
+      "deps",
+      "renovate"
+    ],
+    "prCreation": "not-pending",
+    "depTypes": [
+      {
+        "depType": "dependencies",
+        "semanticPrefix": "fix(renovate/deps): ",
+        "automerge": "minor",
+        "automergeType": "pr",
+        "assignees": [
+          "charlike"
+        ]
+      },
+      {
+        "depType": "devDependencies",
+        "semanticPrefix": "chore(renovate/devDeps): ",
+        "automerge": "any",
+        "automergeType": "branch-push"
+      }
+    ],
+    "packageRules": [
+      {
+        "packageNames": [
+          "semantic-release"
+        ],
+        "automerge": "minor",
+        "automergeType": "pr",
+        "pinVersions": false
+      }
+    ]
+  },
+  "verb": {
+    "run": true,
+    "toc": {
+      "render": true,
+      "method": "preWrite",
+      "maxdepth": 3
+    },
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "dush",
+        "p-map-series",
+        "execa",
+        "mri"
+      ],
+      "highlight": "koa-better-router"
+    },
+    "reflinks": [],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
