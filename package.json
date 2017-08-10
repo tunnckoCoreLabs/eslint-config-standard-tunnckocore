@@ -1,19 +1,20 @@
 {
   "name": "eslint-config-standard-tunnckocore",
-  "version": "0.1.0",
-  "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 6 and is oriented to it",
+  "version": "0.0.0-development",
+  "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 6",
   "repository": "tunnckoCore/eslint-config-standard-tunnckocore",
   "homepage": "https://github.com/tunnckoCore/eslint-config-standard-tunnckocore",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
+  "nspId": "5397e94b-daba-4f18-a7a2-6f896ec3fd0b",
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "hela lint . -c .eslintrc.js",
+    "lint": "hela lint -c .eslintrc.js",
     "test": "hela test node test.js",
     "precommit": "hela precommit",
     "commit": "hela commit",
     "postcommit": "git push",
-    "release": "hela release"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
     "node": ">=6",
@@ -36,26 +37,27 @@
   },
   "devDependencies": {
     "eslint": "4.4.1",
-    "hela": "0.1.4",
-    "mukla": "0.4.9"
+    "hela": "0.1.12",
+    "husky": "0.14.3",
+    "semantic-release": "^6.3.6"
   },
   "keywords": [
-    "eslint",
+    "charlike",
     "config",
+    "es2015",
+    "es2017",
+    "es6",
+    "eslint",
+    "hela",
+    "javascript standard style",
+    "jsx",
     "preference",
+    "promise",
+    "react",
     "standard",
     "standard style",
     "standardjs",
-    "javascript standard style",
-    "charlike",
-    "tunnckocore",
-    "hela",
-    "jsx",
-    "react",
-    "promise",
-    "es2015",
-    "es6",
-    "es2017"
+    "tunnckocore"
   ],
   "nyc": {
     "check-coverage": true,
@@ -117,15 +119,22 @@
     "related": {
       "list": [
         "dush",
+        "hela",
         "p-map-series",
         "execa",
         "mri"
       ],
       "highlight": "koa-better-router"
     },
-    "reflinks": [],
+    "reflinks": [
+      "charlike-cli",
+      "execa"
+    ],
     "lint": {
       "reflinks": true
     }
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
   }
 }

@@ -6,7 +6,9 @@
  */
 
 const test = require('mukla') // eslint-disable-line
+const config = require('./index')
 
 test('foo bar', () => {
-  console.log('ok')
+  test.strictEqual(typeof config, 'object')
+  test.strictEqual(typeof config.rules, 'object')
 })
