@@ -9,13 +9,15 @@
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
+    "fresh": "hela fresh",
+    "contrib": "hela contrib",
+    "renovate": "hela renovate",
     "lint": "hela lint -c .eslintrc.js",
     "test": "hela test node test.js",
     "precommit": "hela precommit",
     "commit": "hela commit",
     "postcommit": "git push",
-    "semantic-release": "hela release",
-    "renovate": "hela renovate"
+    "semantic-release": "hela release"
   },
   "engines": {
     "node": ">=6",
