@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-standard-tunnckocore",
   "version": "0.0.0-semantic-release",
-  "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 6",
+  "description": "Self preferences on top of StandardJS + JSX/React. In addition adds fp and jsdoc plugins. Requires Node.js >= 4",
   "repository": "tunnckoCore/eslint-config-standard-tunnckocore",
   "homepage": "https://github.com/tunnckoCore/eslint-config-standard-tunnckocore",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
