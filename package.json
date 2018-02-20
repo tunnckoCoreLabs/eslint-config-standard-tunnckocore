@@ -39,7 +39,7 @@
     "eslint-plugin-standard": "3.0.1"
   },
   "devDependencies": {
-    "eslint": "4.17.0",
+    "eslint": "4.18.1",
     "hela": "2.0.8",
     "husky": "0.14.3",
     "semantic-release": "^7.0.0"
