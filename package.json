@@ -27,7 +27,7 @@
     "index.js"
   ],
   "dependencies": {
-    "eslint-config-standard": "10.2.1",
+    "eslint-config-standard": "11.0.0",
     "eslint-config-standard-jsx": "4.0.2",
     "eslint-config-standard-react": "5.0.0",
     "eslint-plugin-fp": "2.3.0",
