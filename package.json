@@ -41,7 +41,7 @@
   "devDependencies": {
     "eslint": "5.6.0",
     "hela": "2.0.10",
-    "husky": "1.0.0",
+    "husky": "1.0.1",
     "semantic-release": "^7.0.0"
   },
   "keywords": [
