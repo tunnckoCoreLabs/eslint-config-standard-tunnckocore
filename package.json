@@ -20,8 +20,8 @@
     "semantic-release": "hela release"
   },
   "engines": {
-    "node": ">=4",
-    "npm": ">=5"
+    "node": "11.7.0",
+    "npm": "6.7.0"
   },
   "files": [
     "index.js"
